@@ -1,0 +1,91 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	background-image: url("../img/fundo.jpg");
+	background-color: blue;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* e agora a regra de ouro que fará a imagem ocupar todo o viewport */
+    background-size: 100% 100%;
+    color: white;
+    font-family: arial;
+}
+
+input{
+	display: block;
+	height: 40px;
+	width: 400px;
+	margin: 10px;
+	margin-left: 10px;
+	border-radius: 30px;
+	border:1px solid white;
+	font-size: 12pt;
+	text-indent: 15px;
+	--padding: 10px 20px;
+	--border : none;
+	background-color: rgba(255,255,255,0.01);
+	color: white;
+	outline: none;
+}
+
+div#corpo-form{
+	/*background-color: red;*/
+	width: 420px;
+	margin: 130px auto 0px auto;
+}
+div#corpo-form-cad{
+	width: 420px;
+	margin: 130px auto 0px auto;
+}
+
+div#corpo-form h1, div#corpo-form-cad h1{
+	--text-align: center;
+	text-indent: 25px;
+	padding: 20px;
+}
+
+a{
+	color: white;
+	text-decoration: none;
+	text-align: center;
+	display: block;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+input[type=submit]{
+	background-color: #00FA9A;
+	border: none;
+	cursor: pointer; 
+}
+
+div#msg-sucesso{
+	width: 420px;
+	margin: 10px auto;
+}
+
+div.msg-erro{
+	width: 420px;
+	margin: 10px auto;
+	padding: 10px;
+	background-color: rgba(250,128,114,.3);
+	border: 1px solid rgb(165,42,42);
+}
+
+::-webkit-input-placeholder { /* Edge */
+  color: #fff;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #fff;
+}
+
+::placeholder {
+  color: #fff;
+}
+
